@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowJs": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "typings", "vite.config.ts", ".eslintrc.cjs", "postcss.config.cjs", "prettier.config.mjs", "tailwind.config.ts"],
+  "exclude": ["build", "node_modules", "public"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
